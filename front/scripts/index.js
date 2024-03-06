@@ -2,6 +2,10 @@
 //console.log("estoy en el index");
 const filmsContainer = document.getElementById("movies")
 
+$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {  
+data.forEach(renderMovies)
+});
+
 renderMovies = function(movie) {
     const movieCard = document.createElement("div")
     movieCard.classList.add("movie_card")
@@ -31,14 +35,14 @@ renderMovies = function(movie) {
     <h1>${movie.title}</h1>
     <h4>${movie.year}, ${movie.director}</h4>
     <span class="minutes">${movie.duration}</span>
-    <p class="type">${movie.genre.join(", ")}
+    <p class="type">${movie.genre.join(', ')}
     `
 
     divTextos.innerHTML = `<p class="text">${movie.description}</p>
     `
 
     movieSocial.innerHTML = `<ul>
-    <li><i class="material-icons">${movie.rate}</i></li>
+    <li><i class="material-icons"><strong>Rate: </strong>${movie.rate}</i></li>
     </ul>
     `
 
@@ -53,4 +57,4 @@ renderMovies = function(movie) {
 
 
 
-tempData.forEach(renderMovies)
+//tempData.forEach(renderMovies)
