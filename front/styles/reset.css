@@ -1,0 +1,53 @@
+/* Reset CSS */
+
+/* Ajustes generales */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes para el cuerpo del documento */
+body {
+    line-height: 1.5;
+}
+
+/* Ajustes para listas */
+ol, ul {
+    list-style: none;
+}
+
+/* Ajustes para elementos de texto */
+a, b, strong, em, i, small, code {
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+/* Ajustes para formularios y botones */
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+/* Ajustes para imágenes y objetos multimedia */
+img, iframe, embed, object, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes adicionales para HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/* Ajustes para elementos de formulario HTML5 */
+input, select, textarea {
+    font: inherit;
+}
+
+/* Ajustes para la tabla */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
