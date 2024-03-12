@@ -1,4 +1,4 @@
-a {
+.headerLinks {
   text-decoration: none;
   color: inherit;
 }
@@ -33,7 +33,7 @@ body {
   background-color: rgba(0, 0, 0, 0.966);
 }
 
-h1 {
+.links {
   color: aliceblue;
 }
 
