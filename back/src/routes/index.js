@@ -4,7 +4,7 @@ const moviesRouter = require("./moviesRouter")
 
 const router = Router();
 
-router.use("/", moviesRouter);
+router.use("/movies", moviesRouter);
 
 
 

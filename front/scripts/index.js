@@ -6,7 +6,7 @@ import { renderMovies } from "./renderCards";
 const axios = require("axios");
 async function fetchMovies() {
     try {
-        const response = await axios.get("https://students-api.up.railway.app/movies");
+        const response = await axios.get("http://localhost:3000/movies");
         const movies = response.data;
         console.log(movies);
         movies.forEach(movie => {
@@ -17,3 +17,6 @@ async function fetchMovies() {
     }
 }
 fetchMovies();
+
+
+//   const response = await axios.get("https://students-api.up.railway.app/movies");
