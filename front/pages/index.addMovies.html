@@ -30,34 +30,34 @@
   </header>
   <body>
     <div class="AddMovies">
-      <form id="addMovieForm" onsubmit="return formValidation()">
+      <form id="addMovieForm">
         <div class="mb-3">
           <label for="movieTitle" class="form-label text-white">Title</label>
-          <input type="text" class="form-control" id="movieTitle">
+          <input type="text" name="title" class="form-control" id="movieTitle">
         </div>
         <div class="mb-3">
           <label for="movieYear" class="form-label text-white">Premier Year</label>
-          <input type="number" class="form-control" id="movieYear">
+          <input type="number" name="year" class="form-control" id="movieYear">
         </div>
         <div class="mb-3">
           <label for="movieDirector" class="form-label text-white">Director</label>
-          <input type="text" class="form-control" id="movieDirector">
+          <input type="text" name="director" class="form-control" id="movieDirector">
         </div>
         <div class="mb-3">
           <label for="movieDuration" class="form-label text-white">Duration</label>
-          <input type="text" class="form-control" id="movieDuration">
+          <input type="text" name="duration" class="form-control" id="movieDuration">
         </div>
         <div class="mb-3">
           <label for="movieGenre" class="form-label text-white">Genre</label>
-          <input type="text" class="form-control" id="movieGenre">
+          <input type="text" name="genre" class="form-control" id="movieGenre">
         </div>
         <div class="mb-3">
           <label for="movieRate" class="form-label text-white">Rate</label>
-          <input type="number" class="form-control" id="movieRate" step="0.1">
+          <input type="number" name="rate" class="form-control" id="movieRate" step="0.1">
         </div>
         <div class="mb-3">
           <label for="moviePoster" class="form-label text-white">Poster URL</label>
-          <input type="url" class="form-control" id="moviePoster">
+          <input type="url" name="poster" class="form-control" id="moviePoster">
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -66,5 +66,6 @@
 
       </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/scripts/formValidation.js"></script>
   </body>

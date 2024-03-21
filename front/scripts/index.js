@@ -18,5 +18,24 @@ async function fetchMovies() {
 }
 fetchMovies();
 
+const form = document.getElementById("addMovieForm");
+
+form.addEventListener("submit", async function(e){
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    console.log([...formData]);
+
+    try {
+        await axios.post("https://httpbin.org/post", formData)
+        console.log(res);
+        
+    } catch (error) {
+        console.log(error);
+    }
+})
+
+
 
 //   const response = await axios.get("https://students-api.up.railway.app/movies");
